@@ -117,11 +117,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
 //        print("\(self.dataSource[indexPath.row])---\(self.downTime)")
         
-        cell.label1.text = "时间"+ViewController.stringFromDownTime(timeS: self.dataSource[indexPath.row] - self.downTime)
-        cell.label2.text = "原始时间\(self.dataSource[indexPath.row])"
-        cell.label3.text = "第\(self.downTime)秒"
+        cell.label1.text = ViewController.stringFromDownTime(timeS: self.dataSource[indexPath.row] - self.downTime)
+        cell.label2.text = "\(self.dataSource[indexPath.row])"
+        cell.label3.text = "\(self.downTime)"
 
-        cell.label4.text = "第\(indexPath.row)行"
+        cell.label4.text = "\(indexPath.row)"
         
         return cell
         
